@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/a_bg2"
+    tools:context=".AddProductActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:paddingTop="16dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="73dp">
+            <TextView
+                android:layout_margin="10dp"
+                android:paddingLeft="14dp"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:gravity="center_horizontal"
+                android:text="Rent Save and Grow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <!-- User Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textSize="14sp"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:inputType="textCapWords"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Product Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Name"
+            android:textSize="14sp"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pdname_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:inputType="textCapWords"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Price -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Price"
+            android:textSize="14sp"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/price_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Phone Number -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Phone Number"
+            android:textSize="14sp"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:inputType="phone"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Location -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Location"
+            android:textSize="14sp"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/location_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Duration -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Duration"
+            android:textSize="14sp"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/duration_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abhaya_libre_bold"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Image"
+        android:textColor="#FFF"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:id="@+id/upload_img"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Upload"
+        android:textColor="#FFF"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:id="@+id/upload"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

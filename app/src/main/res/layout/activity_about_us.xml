@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/a_bg">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="288dp"
+        android:layout_height="65dp"
+        android:fontFamily="@font/bungee"
+        android:gravity="center"
+        android:text="ABOUT US"
+        android:textColor="@color/black"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646">
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="282dp"
+        android:layout_height="370dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="50dp"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="168dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/bungee"
+                android:text="This is a farming app for farmers that will be of great benefit to the farming community.From leaf disease detection and renting farming equipments till providing various agro based news, this app achieves that."
+                android:textAlignment="center"
+                android:textColor="#1E1E1E"
+                android:textSize="15dp"
+                android:gravity="center_horizontal" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="105dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="50dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pepper" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="105dp"
+        android:layout_height="83dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.543">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tomato" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="105dp"
+        android:layout_height="85dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/potato" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/a_bg"
+
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

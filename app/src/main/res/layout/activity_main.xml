@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/txtheader"
+        android:layout_width="399dp"
+        android:layout_height="49dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/bungee"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:text="Welcome "
+        android:includeFontPadding="false"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="@+id/flFragment"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="13dp" />
+    <FrameLayout
+        android:id="@+id/flFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="375dp"
+        android:layout_height="482dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_image_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_camera"
+        app:fabSize="normal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/webView"
+        app:layout_constraintStart_toStartOf="@+id/webView"
+        app:layout_constraintTop_toBottomOf="@+id/webView"
+        app:tint="#39796B"
+        tools:targetApi="lollipop" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

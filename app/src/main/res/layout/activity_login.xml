@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/new_bg"
+    android:padding="16dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_width="127dp"
+        android:layout_height="133dp"
+        android:layout_gravity="center"
+        android:src="@drawable/a_logo" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/bungee"
+        android:gravity="center"
+        android:textColor="#004D40"
+        android:includeFontPadding="false"
+        android:text="Hello, Welcome!"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/loginDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#39796B"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="Login in to Continue"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abhaya_libre_semibold"
+            android:id="@+id/user_edit"
+            android:hint="Username"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_edit"
+            android:fontFamily="@font/abhaya_libre_semibold"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgot_text"
+            android:fontFamily="@font/abhaya_libre_semibold"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="end"
+            android:text="Forgot Password?"/>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:text="Login"
+            app:backgroundTint="#00251a" />
+
+
+        <TextView
+            android:id="@+id/signup_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/abhaya_libre_semibold"
+            android:text="Not Registered? Sign Up"
+            android:textColor="#2d2d2d" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Agrozen" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.Agrozen.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Agrozen.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Agrozen.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!-- Styles related to text -->
+    <style name="DescriptiveRegularTextTheme">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:textColor">#ff808080</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TertiaryTextTheme">
+        <item name="android:textSize">@dimen/tertiary_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="SecondaryTextTheme">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="TitleTextTheme">
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="BoldTitleTextTheme">
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ListTitleTheme">
+        <item name="android:textSize">@dimen/list_title_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!-- Style related to Sign in and Sign up activities -->
+    <style name="LogInTheme" parent="AppTheme">
+        <item name="android:statusBarColor" tools:targetApi="21">@color/white</item>
+        <item name="android:navigationBarColor" tools:targetApi="21"  >@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+    </style>
+
+
+</resources>

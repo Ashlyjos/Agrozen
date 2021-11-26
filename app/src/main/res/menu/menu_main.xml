@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Menusample="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/context_home"
+        android:title="Webview"
+        Menusample:showAsAction="always"
+        android:icon="@drawable/webviewiconn"/>
+    <item
+        android:id="@+id/context_back"
+        android:title="Home"
+        Menusample:showAsAction="always"
+        android:icon="@drawable/back"/>
+
+    <item
+        android:id="@+id/context_exit"
+        android:title="Exit"
+        Menusample:showAsAction="always"
+        android:icon="@drawable/exit"/>
+
+    <item
+        android:id="@+id/context_contact"
+        android:title="Contact Us"
+        android:orderInCategory="1"/>
+    <item
+        android:id="@+id/context_about"
+        android:title="About this song"
+        android:orderInCategory="2"/>
+    <item
+        android:id="@+id/context_logout"
+        android:title="Logout"
+        android:orderInCategory="3"/>
+
+
+</menu>

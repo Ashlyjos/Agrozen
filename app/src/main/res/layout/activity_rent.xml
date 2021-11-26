@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/reLativeLayout"
+    android:background="@drawable/bg"
+    tools:context=".RentActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:paddingTop="16dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/abhaya_libre_bold"
+            android:gravity="center_horizontal"
+            android:paddingLeft="14dp"
+            android:text="Rent Save and Grow"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/products_recyclerView"
+
+        android:layout_width="match_parent"
+        android:layout_height="555dp"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="40dp"
+        android:overScrollMode="never"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_image_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="174dp"
+        android:layout_marginLeft="174dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginRight="181dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_add"
+        app:fabSize="normal"
+        app:layout_constraintTop_toBottomOf="@+id/layout1"
+        app:tint="#39796B"
+        tools:targetApi="lollipop" />
+
+</RelativeLayout>
